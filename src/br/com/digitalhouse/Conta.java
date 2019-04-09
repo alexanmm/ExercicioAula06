@@ -35,6 +35,8 @@ public abstract class Conta {
 
     //Fazer deposito
     public void fazerDeposito(Float valorDeposito){
+        System.out.println("Deposito: " + String.valueOf(valorDeposito));
+
         saldo = saldo + valorDeposito;
     };
 
@@ -42,8 +44,8 @@ public abstract class Conta {
     public abstract Boolean sacarDinheiro (Float valorSaque);
 
     //Consultar saldo
-    public Float consultarSaldo(){
-        return saldo;
+    public void consultarSaldo(){
+        System.out.println("Saldo: " + String.valueOf(saldo));
     };
 
 }

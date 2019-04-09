@@ -8,6 +8,22 @@ public class Cheque {
     private String bancoEmissor;
     private Date   dataPagamento;
 
+    //Construtor Padrão
+    public Cheque( Float  valor,
+                   String bancoEmissor,
+                   Date   dataPagamento){
+
+        this.valor = valor;
+        this.bancoEmissor = bancoEmissor;
+        this.dataPagamento = dataPagamento;
+
+    }
+
+    //Construtor
+    public Cheque(){
+
+    }
+
     //Getter and Setter
     public Float getValor() {
         return valor;
